@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
-public class ActivityB extends AppCompatActivity {
+public class Activity2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

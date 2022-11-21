@@ -14,10 +14,10 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".ActivityB"
+            android:name=".Activity2"
             android:exported="false" />
         <activity
-            android:name=".ActivityA"
+            android:name=".Activity1"
             android:exported="false" />
         <activity
             android:name=".Tugas"

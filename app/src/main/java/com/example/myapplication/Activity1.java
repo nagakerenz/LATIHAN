@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class ActivityA extends AppCompatActivity {
+public class Activity1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class ActivityA extends AppCompatActivity {
                 Bundle bundle = new Bundle();
                 bundle.putString("data1", etData1.getText().toString());
                 bundle.putString("data2", etData2.getText().toString());
-                Intent intent = new Intent(ActivityA.this,ActivityB.class);
+                Intent intent = new Intent(Activity1.this, Activity2.class);
                 intent.putExtras(bundle);
                 startActivity(intent);
             }
@@ -35,7 +35,7 @@ public class ActivityA extends AppCompatActivity {
         btSubmitIntent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ActivityA.this,ActivityB.class);
+                Intent intent = new Intent(Activity1.this, Activity2.class);
                 intent.putExtra("data1", etData1.getText().toString());
                 intent.putExtra("data2", etData2.getText().toString());
                 startActivity(intent);
